@@ -35,3 +35,41 @@ VALUES
   ('Alvin', 'Leathes', '1A', '2018-12-22 14:42:00', '2018-12-22 15:56:00', 'American Airlines', 'Cedar Rapids', 'United States', 'Chicago', 'United States'),
   ('Berkie', 'Wycliff', '32B', '2019-02-06 16:28:00', '2019-02-06 19:18:00', 'American Airlines', 'Charlotte', 'United States', 'New Orleans', 'United States'),
   ('Cory', 'Squibbes', '10D', '2019-01-20 19:30:00', '2019-01-20 22:45:00', 'Avianca Brasil', 'Sao Paolo', 'Brazil', 'Santiago', 'Chile');
+/*
+CREATE TABLE countries
+(
+  id SERIAL PRIMARY KEY,
+  country TEXT NOT NULL
+);
+
+INSERT INTO countries
+  (country)
+VALUES
+ ('United States'),
+ ('United Kingdom'),
+ ('Mexico'),
+ ('Japan'),
+ ('Morocco'),
+ ('China'),
+ ('Chile'),
+ ('Brazil'),
+ ('UAE'),
+ ('France');
+
+CREATE TABLE airlines
+(
+  id SERIAL PRIMARY KEY,
+  airline TEXT NOT NULL UNIQUE
+);
+
+INSERT INTO airlines
+  (airline)
+VALUES
+('United'),
+('British Airways'),
+('Delta'),
+('TUI Fly Belgium'),
+('Air China'),
+('American Airlines'),
+('Avianca Brasil');
+*/

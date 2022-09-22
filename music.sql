@@ -31,3 +31,45 @@ VALUES
   ('Moves Like Jagger', 201, '06-21-2011', '{"Maroon 5", "Christina Aguilera"}', 'Hands All Over', '{"Shellback", "Benny Blanco"}'),
   ('Complicated', 244, '05-14-2002', '{"Avril Lavigne"}', 'Let Go', '{"The Matrix"}'),
   ('Say My Name', 240, '11-07-1999', '{"Destiny''s Child"}', 'The Writing''s on the Wall', '{"Darkchild"}');
+
+/*
+CREATE TABLE artists
+  (
+    id SERIAL PRIMARY KEY,
+    artist TEXT NOT NULL,
+    song_id INTEGER REFERENCES songs
+  );
+
+INSERT INTO artists
+  (artist, song_id)
+VALUES
+  ('Hanson', 1),
+  ('Queen', 2),
+  ('Mariah Cary', 3),
+  ('Boyz II Men', 3),
+  ('Lady Gaga', 4),
+  ('Bradley Cooper', 4),
+  ('Nickelback', 5),
+  ('Jay Z', 6),
+  ('Alicia Keys', 6);
+  --etc.
+
+CREATE TABLE producers
+  (
+    id SERIAL PRIMARY KEY,
+    producer TEXT NOT NULL,
+    song_id INTEGER REFERENCES songs
+  );
+
+INSERT INTO artist_songs
+  (producer, song_id)
+VALUES
+  ('Dust Brothers', 1),
+  ('Stephen Lironi', 1),
+  ('Roy Thomas Baker', 2),
+  ('Walter Afanasieff', 3),
+  ('Benjamin Rice', 4),
+  ('Rick Parashar', 5),
+  ('Al Shux', 6),
+  --etc.
+*/
